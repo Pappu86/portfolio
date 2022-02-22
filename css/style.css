@@ -1,0 +1,65 @@
+/****************************************
+Template Name: Portfolio 
+Description: My portfolio template
+Template URI: http://msapp.themebins.com
+Author: ''
+Author URI: ''
+Version: 0.1
+
+/******* Import variables scss file *******/
+/********** MSAPP SCSS/CSS INDEX *********
+1. SCSS VARIABLES
+  1.1 DEFAULT VARIABLES
+  1.2 MIXIN VARIABLES
+*****************************************/
+/****************************************
+1. SCSS VARIABLES
+*****************************************/
+/******** TRANSFORM ********/
+/******** ANIMATION ********/
+/******** DISPLAY FLEX ********/
+/******** FLEX DIRECTION ********/
+/******** FLEX WRAP ********/
+/******** COMMON RGB ********/
+/******** ANIMAION UNDER LINER ********/
+/******** USER TEXT SELECT ********/
+/****************************************
+END SCSS VARIABLES
+*****************************************/
+/****************************************
+ DEFAULT SCSS
+*****************************************/
+/***********  START DEFAULT ***************/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i");
+body {
+  font-family: "Roboto", sans-serif;
+  color: #656565;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.1rem;
+}
+
+/*********** END DEFAULT ***************/
+/*********** 1.2 COMMON SCSS ************/
+.hide {
+  display: none;
+}
+
+.width-100p {
+  width: 100%;
+}
+
+/*********** END COMMON ***************/
+
+/*# sourceMappingURL=style.css.map */
