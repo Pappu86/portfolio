@@ -19,6 +19,7 @@ $(document).ready(function () {
 });
 
 $window.on("load", function () {
+  console.log("ppppp loader");
   $("#overlayer").delay(500).fadeOut("slow");
   $(".loader").delay(1000).fadeOut("slow");
   headerSticky();
