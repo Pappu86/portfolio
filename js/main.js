@@ -16,10 +16,10 @@ $(document).ready(function () {
 
   navbarToggler();
   smoothScroll();
+  typedJS();
 });
 
 $window.on("load", function () {
-  console.log("ppppp loader");
   $("#overlayer").delay(500).fadeOut("slow");
   $(".loader").delay(1000).fadeOut("slow");
   headerSticky();
@@ -120,8 +120,6 @@ function scrollToAnchor() {
 -------------------------*/
 function headerSticky() {
   "use strict";
-
-  console.log("pappu");
 
   if ($window.scrollTop() > 10) {
     $("#header").addClass("header-sticky");
@@ -309,6 +307,8 @@ function sliderOwlCarousel() {
 -------------------------*/
 function typedJS() {
   "use strict";
+
+  console.log("element: ", $(".element").length);
 
   if ($(".element").length > 0) {
     var options = {
