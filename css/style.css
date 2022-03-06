@@ -379,4 +379,89 @@ h2 span {
   box-shadow: none;
 }
 
+/*-------------------------
+         PORTFOLIO
+-------------------------*/
+.portfolio .portfolio-filter .list-inline-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.portfolio .portfolio-filter li a {
+  padding: 5px 15px;
+}
+
+.portfolio .portfolio-item {
+  margin-top: 30px;
+}
+
+.portfolio .portfolio-item .img-thumbnail {
+  border: 1px solid transparent;
+  border-radius: 1rem !important;
+}
+
+.img-overlay {
+  background: rgba(255, 66, 116, 0.8);
+  position: relative;
+  height: 90%;
+  width: 90%;
+  margin-top: -300px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 0.5s all ease;
+  border-radius: 1.25rem;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.portfolio-item:hover .img-overlay {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.img-overlay-content {
+  padding: 95px 0;
+}
+
+.portfolio .portfolio-icon a {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  margin: 0 8px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border-color: transparent;
+}
+
+.portfolio .portfolio-icon a:first-child {
+  background-color: #1ab394;
+  color: #ffffff;
+}
+
+.portfolio .portfolio-icon a {
+  background-color: #f7d650;
+  color: #ffffff;
+}
+
+/*-------------------------
+         BUTTON
+-------------------------*/
+.btn-default {
+  background-color: #1ab394;
+  border-color: #1ab394;
+  color: #ffffff;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(87, 180, 148, 0.32);
+}
+
+.btn-default:hover {
+  background-color: #48957a;
+  border-color: #48957a;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */
