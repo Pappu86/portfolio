@@ -400,16 +400,17 @@ h2 span {
 }
 
 .img-overlay {
-  background: rgba(255, 66, 116, 0.8);
+  background: rgba(255, 66, 116, 0.56);
   position: relative;
-  height: 90%;
-  width: 90%;
-  margin-top: -300px;
+  height: 100%;
+  width: 93%;
+  margin-top: -305px;
+  opacity: 0;
   opacity: 0;
   transform: scale(0.8);
   transition: 0.5s all ease;
   border-radius: 1.25rem;
-  margin-left: 20px;
+  margin-left: 15px;
   color: #ffffff;
 }
 
