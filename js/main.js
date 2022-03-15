@@ -17,6 +17,25 @@ $(document).ready(function () {
   navbarToggler();
   smoothScroll();
   typedJS();
+  activeMenu();
+
+  document.addEventListener("scroll", function () {
+    let top = $(window).scrollTop();
+
+    if (top > 1850) {
+      unselectActiveMenu();
+      $("a[href$='#scrollspyContact']").addClass("active");
+    } else if (top > 1305) {
+      unselectActiveMenu();
+      $("a[href$='#scrollspyPortfolio']").addClass("active");
+    } else if (top > 399) {
+      unselectActiveMenu();
+      $("a[href$='#scrollspyAbout']").addClass("active");
+    } else {
+      unselectActiveMenu();
+      $("a[href$='#scrollspyWelcome']").addClass("active");
+    }
+  });
 });
 
 $window.on("load", function () {
@@ -77,9 +96,10 @@ function navbarToggler() {
 function smoothScroll() {
   "use strict";
 
-  $(".header .navbar-nav a, .to-contact, .scroll-down a").on(
+  $(".header .top-menu a, .to-contact, .scroll-down a").on(
     "click",
     function (event) {
+      console.log("smoothScroll: ");
       var $anchor = $(this);
       $root.stop().animate(
         {
@@ -793,4 +813,18 @@ function sendEmail() {
       },
     });
   }
+}
+
+function activeMenu() {
+  $(".active_menu").on("click", function (event) {
+    $this = $(this);
+    unselectActiveMenu();
+    $this.addClass("active");
+  });
+}
+
+function unselectActiveMenu() {
+  $(".active_menu").each(function (index) {
+    $(this).removeClass("active");
+  });
 }
