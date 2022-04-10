@@ -20,8 +20,55 @@
     <header id="header" class="header fixed-top">
       <nav class="navbar px-3">
         <a class="navbar-brand font-weight-bold" href="#scrollspyWelcome"
-          >Pappu<span class="base-color">Miahn</span></a
+          >Pappu<span class="base-color">Miahn</span>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#toggle-menu"
+          aria-controls="toggle-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
+          <span class="lni lni-menu size-md"></span>
+        </button>
+        <div class="navbar-collapse collapse mobile-menu" id="toggle-menu">
+          <ul class="navbar-nav nav-pills ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active_menu active"
+                data-menu="welcome"
+                href="#scrollspyWelcome"
+                >Welcome</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active_menu"
+                data-menu="about"
+                href="#scrollspyAbout"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active_menu"
+                data-menu="works"
+                href="#scrollspyPortfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active_menu"
+                data-menu="contact"
+                href="#scrollspyContact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
         <ul class="nav nav-pills top-menu">
           <li class="nav-item">
             <a
@@ -472,7 +519,8 @@
     </a>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>

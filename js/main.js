@@ -96,22 +96,21 @@ function navbarToggler() {
 function smoothScroll() {
   "use strict";
 
-  $(".header .top-menu a, .to-contact, .scroll-down a").on(
-    "click",
-    function (event) {
-      console.log("smoothScroll: ");
-      var $anchor = $(this);
-      $root.stop().animate(
-        {
-          scrollTop: $($anchor.attr("href")).offset().top - 60,
-        },
-        1500,
-        "easeInOutQuart"
-      );
-      event.preventDefault();
-      $(".navbar-collapse").collapse("hide");
-    }
-  );
+  $(
+    ".header .top-menu a, .to-contact, .scroll-down a, .header .mobile-menu a"
+  ).on("click", function (event) {
+    console.log("smoothScroll: ");
+    var $anchor = $(this);
+    $root.stop().animate(
+      {
+        scrollTop: $($anchor.attr("href")).offset().top - 60,
+      },
+      1500,
+      "easeInOutQuart"
+    );
+    event.preventDefault();
+    $(".navbar-collapse").collapse("hide");
+  });
 }
 
 /*-------------------------

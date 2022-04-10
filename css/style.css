@@ -71,7 +71,8 @@ END SCSS VARIABLES
 }
 /*********** END DEFAULT ***************/
 /*********** 1.2 COMMON SCSS ************/
-.hide {
+.hide,
+.navbar-toggler {
   display: none;
 }
 
@@ -465,6 +466,10 @@ h2 span {
   color: #ffffff;
 }
 
+.header .navbar-toggler {
+  box-shadow: none;
+}
+
 @media only screen and (min-width: 1024px) {
   .image-border {
     width: 440px;
@@ -472,6 +477,18 @@ h2 span {
   }
 }
 @media only screen and (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .top-menu {
+    display: none;
+  }
+
+  .mobile-menu ul {
+    height: 100vh;
+  }
+
   .welcome p {
     max-width: 100%;
   }
