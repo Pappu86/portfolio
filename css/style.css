@@ -167,8 +167,8 @@ h2 span {
   box-shadow: none;
   background-color: transparent;
   padding: 0;
-  width: 630px;
-  height: 355px;
+  width: 350px;
+  /* height: 355px; */
   overflow: hidden;
   border-radius: 1rem;
 }
@@ -311,7 +311,7 @@ h2 span {
 }
 .image-border img {
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 50%;
 }
 
 .about .personal-info ul li p {
@@ -472,8 +472,8 @@ h2 span {
 
 @media only screen and (min-width: 1024px) {
   .image-border {
-    width: 440px;
-    height: 368px;
+    /* width: 440px; */
+    /* height: 368px; */
   }
 }
 @media only screen and (max-width: 768px) {
