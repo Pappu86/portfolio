@@ -470,6 +470,21 @@ h2 span {
   box-shadow: none;
 }
 
+.btn-outline-default{
+  border-color: #48957a;
+  color: #48957a;  
+}
+
+.btn-outline-default:hover {
+  background-color: #48957a;
+  border-color: #48957a;
+  color: #ffffff;
+}
+
+.skil-btn{
+  margin-right: 0.5rem;
+}
+
 @media only screen and (min-width: 1024px) {
   .image-border {
     /* width: 440px; */
